@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mgozi Tech - Digital Solutions and AI Innovation</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        /* Custom Tailwind Configuration to match Mgozi Logo Blue */
+        :root {
+            --mgozi-blue: #00AEEF; /* Bright Cyan/Sky Blue from the logo */
+        }
+        .mgozi-bg-blue {
+            background-color: var(--mgozi-blue);
+        }
+        .mgozi-text-blue {
+            color: var(--mgozi-blue);
+        }
+        .mgozi-border-blue {
+            border-color: var(--mgozi-blue);
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        /* Custom subtle shadow for cards */
+        .card-shadow {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            transition: transform 0.3s ease;
+        }
+        .card-shadow:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo/Brand -->
+                <a href="#home" class="flex-shrink-0 flex items-center">
+                    <!-- Logo image from user upload -->
+                    <img class="h-8 w-auto mr-2 rounded" src="Mgozi_tech_logo.jpg" alt="Mgozi Tech Logo" onerror="this.onerror=null;this.src='https://placehold.co/100x40/f3f4f6/00AEEF?text=Mgozi';">
+                    <span class="text-2xl font-extrabold tracking-tight text-gray-900">Mgozi <span class="mgozi-text-blue">Tech</span></span>
+                </a>
+                
+                <!-- Desktop Links -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#solutions" class="text-gray-600 hover:mgozi-text-blue transition duration-150 ease-in-out font-medium">Solutions</a>
+                    <a href="#about" class="text-gray-600 hover:mgozi-text-blue transition duration-150 ease-in-out font-medium">About Us</a>
+                    <a href="#contact" class="text-gray-600 hover:mgozi-text-blue transition duration-150 ease-in-out font-medium">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- 1. Hero Section -->
+        <section id="home" class="relative overflow-hidden pt-20 pb-32 bg-gray-900">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center lg:w-3/4 mx-auto">
+                    <p class="text-xl font-semibold mgozi-text-blue uppercase tracking-wider mb-4">Innovation. Delivered.</p>
+                    <h1 class="text-5xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-white mb-6 leading-tight">
+                        Powering <span class="mgozi-text-blue">Digital Transformation</span> for Forward-Thinkers
+                    </h1>
+                    <p class="text-xl text-gray-300 max-w-3xl mx-auto mb-10">
+                        Mgozi Tech builds bespoke, scalable technology solutions—from modern web platforms to cutting-edge AI integrations—designed to accelerate your business growth.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-xl text-gray-900 bg-white hover:bg-gray-200 shadow-lg mgozi-border-blue transition duration-200 ease-in-out transform hover:scale-105">
+                        Start Your Project
+                    </a>
+                </div>
+            </div>
+            <!-- Background gradient effect for aesthetics -->
+            <div class="absolute inset-0 opacity-10">
+                <svg class="w-full h-full" viewBox="0 0 1440 810" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <radialGradient id="a" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(720 405) rotate(90) scale(810 1440)">
+                            <stop offset="0" stop-color="#00AEEF" stop-opacity="0.2"/>
+                            <stop offset="1" stop-color="#000000" stop-opacity="0"/>
+                        </radialGradient>
+                    </defs>
+                    <rect width="100%" height="100%" fill="url(#a)"/>
+                </svg>
+            </div>
+        </section>
+
+        <!-- 2. Solutions Section -->
+        <section id="solutions" class="py-20 sm:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-extrabold text-gray-900 mb-4">Our Core Solutions</h2>
+                    <p class="text-xl text-gray-500">Scalable technology built for tomorrow's challenges.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <!-- Solution 1: Web & Mobile Development -->
+                    <div class="p-8 bg-white rounded-2xl card-shadow border border-gray-100">
+                        <div class="mgozi-text-blue mb-4">
+                            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Custom Development</h3>
+                        <p class="text-gray-600">Building high-performance, responsive web applications and scalable APIs tailored precisely to your business requirements and vision.</p>
+                    </div>
+
+                    <!-- Solution 2: AI & Machine Learning -->
+                    <div class="p-8 bg-white rounded-2xl card-shadow border border-gray-100">
+                        <div class="mgozi-text-blue mb-4">
+                            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1v-3.25m-7.25 0h7.5M9.75 17V9.75m4.5 0V17m-4.5 0h4.5M6.75 9.75h10.5M6.75 9.75V8.25M17.25 9.75V8.25m-10.5 0H5.25A2.25 2.25 0 003 10.5v1.5M18.75 8.25H17.25M5.25 10.5V12m14.5-1.5V12"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Data & AI Solutions</h3>
+                        <p class="text-gray-600">Integrating predictive modeling, natural language processing, and deep learning tools to automate processes and uncover powerful insights.</p>
+                    </div>
+
+                    <!-- Solution 3: Cloud & Infrastructure -->
+                    <div class="p-8 bg-white rounded-2xl card-shadow border border-gray-100">
+                        <div class="mgozi-text-blue mb-4">
+                            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37a1.724 1.724 0 002.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Consulting & Strategy</h3>
+                        <p class="text-gray-600">Providing expert guidance on technology roadmaps, cloud infrastructure (AWS/Azure/GCP) setup, and optimizing your development workflows.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. About Section -->
+        <section id="about" class="py-20 sm:py-24 bg-gray-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+                    <div class="mb-10 lg:mb-0">
+                        <img class="w-full h-auto object-cover rounded-3xl shadow-xl border border-gray-200" 
+                            src="https://placehold.co/800x600/e0e0e0/555555?text=Tech+Innovation+Image" 
+                            alt="Abstract image representing Mgozi Tech's innovation."
+                            loading="lazy">
+                    </div>
+                    <div>
+                        <span class="inline-block px-3 py-1 text-sm font-semibold rounded-full bg-gray-200 mgozi-text-blue mb-4">OUR MISSION</span>
+                        <h2 class="text-4xl font-extrabold text-gray-900 mb-6">Driven by Excellence, Defined by Results</h2>
+                        <p class="text-lg text-gray-600 mb-6">
+                            Mgozi Tech was founded on the principle that exceptional technology should be accessible to all businesses, regardless of size. Our team is committed to merging creativity with technical precision to deliver solutions that are not just functional, but truly transformative.
+                        </p>
+                        <p class="text-lg text-gray-600">
+                            We pride ourselves on transparency, collaboration, and a relentless focus on solving complex problems with elegant, future-proof code. Your success is the metric we measure ourselves against.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Contact Section -->
+        <section id="contact" class="py-20 sm:py-24">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-4xl font-extrabold text-gray-900 mb-4">Ready to Build Something Great?</h2>
+                <p class="text-xl text-gray-500 mb-8">
+                    Get in touch to discuss your vision, and let's turn your next big idea into reality.
+                </p>
+                <div class="bg-white p-6 sm:p-10 rounded-2xl shadow-2xl border-t-4 mgozi-border-blue border-solid">
+                    <p class="text-2xl font-bold text-gray-900 mb-4">Contact Information</p>
+                    
+                    <div class="space-y-4 text-left">
+                        <!-- Email -->
+                        <div class="flex items-center text-gray-600">
+                            <svg class="w-6 h-6 mgozi-text-blue mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-7 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"></path></svg>
+                            <span class="font-semibold text-gray-800">Email:</span>
+                            <span class="ml-2">contact@mgozitech.com (Placeholder)</span>
+                        </div>
+                        
+                        <!-- Phone -->
+                        <div class="flex items-center text-gray-600">
+                            <svg class="w-6 h-6 mgozi-text-blue mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.128a4.5 4.5 0 007.08 7.08l1.128-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-4.5c-7.398 0-13.4-6.002-13.4-13.4V5z"></path></svg>
+                            <span class="font-semibold text-gray-800">Phone:</span>
+                            <span class="ml-2">+27 (0) 12 345 6789 (Placeholder)</span>
+                        </div>
+                        
+                        <!-- Address -->
+                        <div class="flex items-center text-gray-600">
+                            <svg class="w-6 h-6 mgozi-text-blue mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            <span class="font-semibold text-gray-800">Address:</span>
+                            <span class="ml-2">123 Innovation Dr, Tech City, 1000 (Placeholder)</span>
+                        </div>
+                    </div>
+
+                    <p class="mt-6 text-sm text-gray-500">
+                        <strong class="mgozi-text-blue">Please Note:</strong> Replace all placeholder information (Email, Phone, Address) with your official company details before deployment.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center flex-wrap">
+                <p class="text-sm text-gray-400">&copy; <span id="current-year"></span> Mgozi Tech. All rights reserved.</p>
+                <div class="flex space-x-4">
+                    <a href="#home" class="text-gray-400 hover:mgozi-text-blue text-sm transition duration-150">Home</a>
+                    <a href="#about" class="text-gray-400 hover:mgozi-text-blue text-sm transition duration-150">Privacy Policy (Example)</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript to set the current year in the footer -->
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
